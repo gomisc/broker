@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	"git.eth4.dev/golibs/errors"
-	"git.eth4.dev/golibs/slog"
-	"git.eth4.dev/golibs/types"
+	types "gopkg.in/gomisc/types.v1"
 
-	"git.eth4.dev/golibs/broker"
+	"gopkg.in/gomisc/broker.v1"
 )
 
 type (
@@ -22,7 +20,13 @@ type (
 	}
 )
 
-func Run[T types.Ordered](log slog.Logger, b broker.Broker[T], workers int, worker Worker[T], kinds ...fmt.Stringer) *Subscriber[T] {
+func Run[T types.Ordered](
+	log slog.Logger,
+	b broker.Broker[T],
+	workers int,
+	worker Worker[T],
+	kinds ...fmt.Stringer,
+) *Subscriber[T] {
 	subscriber := &Subscriber[T]{
 		log:    log,
 		broker: b,

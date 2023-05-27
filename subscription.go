@@ -1,7 +1,7 @@
 package broker
 
 import (
-	"git.eth4.dev/golibs/types"
+	types "gopkg.in/gomisc/types.v1"
 )
 
 // Subscription - event subscription

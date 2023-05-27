@@ -5,10 +5,7 @@ import (
 	"os"
 	"sync"
 
-	"git.eth4.dev/golibs/errors"
-	"git.eth4.dev/golibs/fields"
-	"git.eth4.dev/golibs/slog"
-	"git.eth4.dev/golibs/types"
+	types "gopkg.in/gomisc/types.v1"
 )
 
 const ErrBrokerIsStopped = errors.Const("operation on stopped broker")

@@ -1,8 +1,8 @@
 package broker
 
 import (
-	"git.eth4.dev/golibs/execs"
-	"git.eth4.dev/golibs/types"
+	execs "gopkg.in/gomisc/execs.v1"
+	types "gopkg.in/gomisc/types.v1"
 )
 
 type (
