@@ -1,8 +1,8 @@
 package broker
 
 import (
-	execs "gopkg.in/gomisc/execs.v1"
-	types "gopkg.in/gomisc/types.v1"
+	"gopkg.in/gomisc/execs.v1"
+	"gopkg.in/gomisc/types.v1"
 )
 
 type (

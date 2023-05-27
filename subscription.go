@@ -1,7 +1,7 @@
 package broker
 
 import (
-	types "gopkg.in/gomisc/types.v1"
+	"gopkg.in/gomisc/types.v1"
 )
 
 // Subscription - event subscription

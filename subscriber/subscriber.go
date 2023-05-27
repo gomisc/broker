@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	types "gopkg.in/gomisc/types.v1"
+	"gopkg.in/gomisc/errors.v1"
+	"gopkg.in/gomisc/slog.v1"
+	"gopkg.in/gomisc/types.v1"
 
 	"gopkg.in/gomisc/broker.v1"
 )
